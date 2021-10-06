@@ -44,9 +44,22 @@
         }
       }
     }
+
+    .list-handicap {
+      margin: .5rem 0;
+      gap: .5rem;
+    }
+
+    .list-handicap, .trajets {
+      display: none;
+    }
   }
 
   &.open {
-    height: 200px;
+    height: auto;
+
+    .list-handicap, .trajets {
+      display: flex;
+    }
   }
 }

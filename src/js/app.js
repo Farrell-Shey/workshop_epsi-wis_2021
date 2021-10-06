@@ -1,16 +1,17 @@
-import Axios from "axios";
+import axios from "axios";
 
 require('bootstrap');
 
-require('./test');
-
-function openSearch() {
-    let search = document.getElementById('search');
-    search.classList.toggle("open");
-}
-
-document.addEventListener('DOMContentLoaded', function () {
+//require('./test');
 
 
 
-});
+axios({
+    method: 'get',
+    url: 'https://secret-lake-22228.herokuapp.com/api/datas',
+    responseType: 'stream'
+})
+    .then(function (response) {
+        console.log(response)
+    });
+
