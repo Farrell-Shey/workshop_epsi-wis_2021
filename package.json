@@ -1,5 +1,5 @@
 {
-  "name": "workshop2021",
+  "name": "workshop_epsi-wis_2021",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "sass-loader": "^12.1.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.2",
     "axios": "^0.22.0",
     "bootstrap": "^5.1.1"
   }

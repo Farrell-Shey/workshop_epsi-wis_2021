@@ -1,0 +1,76 @@
+.modal-content {
+  background: transparent;
+  border: unset;
+
+  .modal-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    background: $primary;
+    border-radius: 15px 15px 0 0;
+    width: 80%;
+    margin: 0 auto;
+    padding: .5rem .2rem 1rem;
+    border: unset;
+    z-index: 2;
+
+    .title {
+      display: block;
+      margin: auto;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $secondary;
+      font-size: 1rem;
+    }
+
+    .sub-title {
+      display: block;
+      width: 95%;
+      text-align: center;
+      margin: .5rem auto -30px;
+      font-size: .75rem;
+      background: $secondary;
+      color: $dark-gray;
+      border-radius: 9999px;
+      box-shadow: 0 4px 4px rgba($dark, .25);
+      padding: .2rem 1em;
+    }
+
+  }
+
+  .modal-body {
+    z-index: 1;
+    background: $secondary;
+    min-height: 50vh;
+    border-radius: 15px;
+  }
+
+  .modal-footer {
+    z-index: 2;
+    display: flex;
+    padding: 0;
+    margin: -25px auto;
+    border: unset;
+
+    .btn {
+      border-radius: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .modal-content {
+    .modal-header {
+
+      .title {
+        font-size: 1.5rem;
+      }
+
+      .sub-title {
+        font-size: 1rem;
+      }
+    }
+  }
+}

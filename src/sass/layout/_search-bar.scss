@@ -1,0 +1,52 @@
+.search {
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $secondary;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -10px 25px rgba($dark, .25);
+  padding: .5rem;
+
+  .form {
+    width: 95%;
+    margin: auto;
+
+    &:before {
+      content: "";
+      display: block;
+      margin: 0 auto 15px;
+      width: 50px;
+
+      height: 4px;
+      border-radius: 999px;
+      background: $gray;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: .5rem;
+      background: $light-gray;
+      border-radius: 10px;
+      padding: .2rem .75rem;
+
+      .btn {
+        padding: 0;
+      }
+
+      .form-control {
+        background: unset;
+        border: unset;
+
+        &:focus {
+          outline: unset;
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+
+  &.open {
+    height: 200px;
+  }
+}
