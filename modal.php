@@ -1,3 +1,8 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,11 +14,11 @@
     <title>Document</title>
 </head>
 <body style="background: rosybrown">
-
+<!--
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
     Launch demo modal
 </button>
-
+-->
 <div class="navbar">
     <nav class="nav">
         <a id="profile" class="nav-link">
@@ -30,6 +35,8 @@
         </a>
     </nav>
 </div>
+
+<div id="map" class="map"></div>
 
 <section id="search" class="search" onclick="openSearch()">
     <form method="post" action="#" class="form">
@@ -106,6 +113,9 @@
         let search = document.getElementById('search');
         search.classList.toggle("open");
     }
+
+
+
 </script>
 </body>
 </html>
