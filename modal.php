@@ -1,7 +1,4 @@
-<?php
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
-?>
+
 
 <!doctype html>
 <html lang="en">
@@ -18,7 +15,8 @@ header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
     Launch demo modal
 </button>
--->
+<a id="test" class="test btn btn-primary">test envoie</a>
+
 <div class="navbar">
     <nav class="nav">
         <a id="profile" class="nav-link">
@@ -35,7 +33,7 @@ header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
         </a>
     </nav>
 </div>
-
+-->
 <div id="map" class="map"></div>
 
 <section id="search" class="search" onclick="openSearch()">
@@ -113,8 +111,6 @@ header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
         let search = document.getElementById('search');
         search.classList.toggle("open");
     }
-
-
 
 </script>
 </body>
